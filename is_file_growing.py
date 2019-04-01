@@ -47,8 +47,8 @@ if __name__ == "__main__":
     res = is_growing_with_retries(f)
 
     if not res:
-        print "CRITICAL - ERROR %s is not growing" % f
+        print ("CRITICAL - ERROR %s is not growing",f)
         sys.exit(2)
 
-    print "OK. file %s is growing" % f
+    print ("OK. file %s is growing",f)
     sys.exit(0)
